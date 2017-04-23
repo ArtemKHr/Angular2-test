@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="panel panel-default col-md-4">
+        <div class="panel-body">
+            <info-comp [name]="developers[index].name" [age]=developers[index].age [job]="developers[index].job">
+            </info-comp>
+         </div>
+        <div class="panel-footer">
+            <actions-comp (onChanged)="onChanged($event)" ></actions-comp>
+        </div>
+    </div>
+</div>
